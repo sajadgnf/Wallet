@@ -1,0 +1,136 @@
+.expensesContainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 900px;
+    max-width: 90vw;
+    min-height: 499px;
+    height: auto;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+}
+
+.expensesContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.header {
+    color: rgb(87, 87, 87);
+}
+
+.header button,
+.header input {
+    border: 1px solid #ee7979;
+    outline: none;
+    border-radius: 5px;
+}
+
+.header input {
+    padding: 5px;
+    width: 250px;
+}
+
+.totalCost {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smaller {
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    width: 200px;
+}
+
+.header button {
+    background-color: #ee7979;
+    cursor: pointer;
+}
+
+.header button:hover > a {
+    color: rgb(255, 255, 255);
+}
+
+.header button a {
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: rgb(44, 44, 44);
+    transition: all 0.3s ease;
+}
+
+.expenseContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.emptyContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.empty {
+    width: 400px;
+    height: 400px;
+}
+
+.firstBall,
+.secondBall {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: blur(5px);
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+}
+
+.firstBall {
+    top: -2rem;
+    right: -2.5rem;
+}
+
+.secondBall {
+    bottom: -2.5rem;
+    left: -2.5rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+@media (max-width: 820px) {
+    .smaller {
+        bottom: 50px;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+    }
+
+    .header {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .smaller {
+        bottom: 50px;
+        left: -10px;
+        transform: translate(0);
+        width: 100%;
+    }
+}
