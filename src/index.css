@@ -18,6 +18,10 @@ body {
   padding: 50px;
 }
 
+.title {
+  color:  rgb(77, 77, 77);
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }

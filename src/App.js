@@ -11,7 +11,7 @@ import LandingPage from "./components/LandingPage";
 const App = () => {
   return (
     <Provider store={store}>
-      <h1>Wallet</h1>
+      <h1 className="title">Wallet</h1>
       <Routes>
         <Route path="/addExpense" element={<AddForm />} />
         <Route path="/" element={<LandingPage />} />
