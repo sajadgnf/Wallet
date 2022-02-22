@@ -28,6 +28,7 @@ const LandingPage = () => {
     // search for expense
     const filterList = expensesList.filter(expense => {
         if (expense.title.toLowerCase().includes(query.toLowerCase()) || expense.category.toLowerCase().includes(query.toLowerCase())) return expense
+        else if (value === "") return expense
     })
 
     const wholeCost = filterList.reduce((total, expense) => total + Number(expense.amount), 0)
