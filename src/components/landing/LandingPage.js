@@ -39,7 +39,8 @@ const LandingPage = () => {
             <h1 className={styles.title}>Wallet</h1>
             <div className={styles.expensesContainer}>
                 <div className={styles.header}>
-                    <h3 className={wholeCost.toString().split('').length > 10 ? styles.smaller : styles.totalCost}><span>Total Cost: </span>{orderedWholeCost}$</h3>
+                    <h3 classNa
+                    me={wholeCost.toString().split('').length > 10 ? styles.smaller : styles.totalCost}><span>Total Cost: </span>{orderedWholeCost}$</h3>
                     <input type="text" placeholder='Search for expenses' value={value} onChange={event => searchHandler(event)} />
                     <button><Link to="/addExpense">Add New expense</Link></button>
                 </div>

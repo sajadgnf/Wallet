@@ -15,6 +15,9 @@ import { deleteItem } from "../../redux/expense/expenseAcion"
 // toast
 import { notify } from "./toast"
 
+// functions
+import { shorter } from '../../helpers/functions';
+
 const Expense = ({ expense }) => {
 
     const dispatch = useDispatch()
@@ -42,7 +45,7 @@ const Expense = ({ expense }) => {
 
                 <div className={styles.rightSideContent}>
                     <img src={trash} alt="trash" onClick={removeHandler} />
-                    <span className={styles.time}>{time}</span>
+                    <span className={styles.time}>{shorter( time )}</span>
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Coin from './Coin'
 
 // funciton
-import Pagination from '../../helpers/Pagination'
+import Pagination from '../shared/Pagination'
 
 // api
 import { getCoin } from '../../services/api'
