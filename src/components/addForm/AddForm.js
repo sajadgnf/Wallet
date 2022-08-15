@@ -4,20 +4,20 @@ import { ToastContainer } from "react-toastify"
 import { useNavigate, Link } from "react-router-dom"
 
 // constants
-import categories from '../constants/categories';
+import categories from '../../constants/categories';
 
 // styles
 import styles from './AddForm.module.css'
 
 // icons
-import arrowDown from "../assets/images/arrow_down.svg"
-import close from "../assets/images/close.svg"
+import arrowDown from "../../assets/images/arrow_down.svg"
+import close from "../../assets/images/close.svg"
 
 // action
-import { addItem } from '../redux/expense/expenseAcion';
+import { addItem } from '../../redux/expense/expenseAcion';
 
 // toast
-import { notify } from './toast';
+import { notify } from '../shared/toast';
 
 const AddForm = () => {
 

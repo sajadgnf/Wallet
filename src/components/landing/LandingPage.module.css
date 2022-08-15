@@ -1,3 +1,10 @@
+.mainContainer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+}
+
 .expensesContainer {
     background-color: rgba(255, 255, 255, 0.5);
     width: 900px;
@@ -7,6 +14,10 @@
     border-radius: 10px;
     padding: 2rem;
     position: relative;
+}
+
+.title {
+    color: rgb(77, 77, 77);
 }
 
 .expensesContainer::before {
@@ -24,6 +35,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
     position: relative;
 }
@@ -40,7 +52,7 @@
 }
 
 .header input {
-    padding: 5px;
+    padding: 10px;
     width: 250px;
 }
 
@@ -60,6 +72,7 @@
 
 .header button {
     background-color: #ee7979;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -68,11 +81,11 @@
 }
 
 .header button a {
-    padding: 5px 20px;
-    text-decoration: none;
+    padding:12px 28px;
     font-weight: bold;
-    letter-spacing: 0.5px;
-    color: rgb(44, 44, 44);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease;
 }
 
@@ -127,8 +140,8 @@
     }
 }
 
-@media(max-width: 520px) {
-    .empty{
+@media (max-width: 520px) {
+    .empty {
         width: 250px;
         height: 250px;
         margin-top: 50px;

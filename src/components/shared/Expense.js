@@ -13,7 +13,7 @@ import trash from "../../assets/images/trash.svg"
 import { deleteItem } from "../../redux/expense/expenseAcion"
 
 // toast
-import { notify } from "../toast"
+import { notify } from "./toast"
 
 const Expense = ({ expense }) => {
 

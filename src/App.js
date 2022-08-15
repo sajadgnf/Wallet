@@ -5,15 +5,18 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import store from "./redux/store"
 
 // components
-import AddForm from "./components/AddForm";
-import LandingPage from "./components/LandingPage";
+import AddForm from "./components/addForm/AddForm";
+import LandingPage from "./components/landing/LandingPage";
+import Header from "./components/header/Header";
+import Crypto from "./components/crypto/Crypto";
 
 const App = () => {
   return (
     <Provider store={store}>
-      <h1 className="title">Wallet</h1>
+      <Header />
       <Routes>
         <Route path="/addExpense" element={<AddForm />} />
+        <Route path="/crypto" element={<Crypto />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Routes>

@@ -6,13 +6,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from "./LandingPage.module.css"
 
 // components
-import Expense from './shared/Expense';
+import Expense from '../shared/Expense';
 
 // actions
-import { search } from "../redux/expense/expenseAcion"
+import { search } from "../../redux/expense/expenseAcion"
 
 // icons
-import empty from "../assets/images/empty.svg"
+import empty from "../../assets/images/empty.svg"
 
 const LandingPage = () => {
 
@@ -35,12 +35,13 @@ const LandingPage = () => {
     const orderedWholeCost = Number(wholeCost).toLocaleString()
 
     return (
-        <>
+        <div className={styles.mainContainer}>
+            <h1 className={styles.title}>Wallet</h1>
             <div className={styles.expensesContainer}>
                 <div className={styles.header}>
                     <input type="text" placeholder='Search for expenses' value={value} onChange={event => searchHandler(event)} />
                     <h3 className={wholeCost.toString().split('').length > 10 ? styles.smaller : styles.totalCost}><span>Total Cost: </span>{orderedWholeCost}$</h3>
-                    <button><Link to="/addExpense">Add</Link></button>
+                    <button><Link to="/addExpense">Add New expense</Link></button>
                 </div>
                 {
                     expensesList.length ?
@@ -54,7 +55,7 @@ const LandingPage = () => {
                 <div className={styles.firstBall}></div>
                 <div className={styles.secondBall}></div>
             </div>
-        </>
+        </div>
     );
 };
 

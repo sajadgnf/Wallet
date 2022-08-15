@@ -6,6 +6,9 @@
     border-radius: 10px;
     padding: 2rem;
     position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
 }
 
 .addFormContainer::before {
@@ -163,7 +166,7 @@
         padding: 3px 5px;
     }
     .categoryHambur h3 {
-        font-size: .9rem;
+        font-size: 0.9rem;
         color: #777;
     }
 }

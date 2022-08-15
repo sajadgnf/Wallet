@@ -9,17 +9,13 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f0ad84;
-  background: linear-gradient(0deg, #eea579 0%, rgb(214, 214, 214) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  padding: 50px;
+  background: rgb(228, 223, 219);
 }
 
-.title {
-  color:  rgb(77, 77, 77);
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
