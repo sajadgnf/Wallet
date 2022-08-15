@@ -2,7 +2,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: 50px;
+    padding: 50px 0;
 }
 
 .expensesContainer {
@@ -38,9 +38,6 @@
     align-items: center;
     margin-bottom: 25px;
     position: relative;
-}
-
-.header {
     color: rgb(87, 87, 87);
 }
 
@@ -81,7 +78,7 @@
 }
 
 .header button a {
-    padding:12px 28px;
+    padding: 12px 28px;
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 1px;
@@ -140,23 +137,32 @@
     }
 }
 
+@media (max-width: 620px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+    .header button {
+        margin-bottom: 15px;
+    }
+    .smaller,
+    .totalCost {
+        position: static;
+        width: unset;
+        left: 0;
+        transform: translate(0);
+        margin-top: 15px;
+    }
+    .firstBall,
+    .secondBall {
+        display: none;
+    }
+}
+
 @media (max-width: 520px) {
     .empty {
         width: 250px;
         height: 250px;
         margin-top: 50px;
     }
-    .header input {
-        transform: translateX(-10px);
-    }
 }
 
-@media (max-width: 350px) {
-    .smaller,
-    .totalCost {
-        bottom: 50px;
-        left: -10px;
-        transform: translate(0);
-        width: 100%;
-    }
-}
