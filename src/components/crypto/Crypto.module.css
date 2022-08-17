@@ -1,5 +1,5 @@
-.mainContainer{
-    display: flex;  
+.mainContainer {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -15,20 +15,14 @@
 .search {
     width: 300px;
     margin: 50px 0 0;
-    border: 1px silver solid;
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(238, 238, 238);
     outline: none;
     transition: all 0.2s ease;
+    border: 1px solid #ee7979;
 }
 
-.search:focus {
-    border-color: #fff;
-    background-color: #fff;
-    box-shadow: rgba(74, 74, 74, 0.24) 0 3px 8px;
-}
-
-.paginateContainer{
+.paginateContainer {
     margin: 20px 0 50px;
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 
 // images
-import creditCart from "../../assets/images/credit-card.png"
+import wallet from "../../assets/images/wallet.svg"
 
 const Header = () => {
     return (
@@ -14,7 +14,7 @@ const Header = () => {
                 <Link to="/"><li>Wallet</li></Link>
                 <Link to="/crypto"><li>Crypto</li></Link>
             </ul>
-            <img className={styles.navabrImg} src={creditCart} alt="credit-cart" />
+            <img className={styles.navabrImg} src={wallet} alt="credit-cart" />
         </nav>
     );
 };
