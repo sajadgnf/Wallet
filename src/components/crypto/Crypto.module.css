@@ -5,19 +5,32 @@
 }
 
 .container {
-    margin: 50px auto 0;
+    margin: 30px auto 0;
     border: 1px silver solid;
     border-radius: 10px;
     width: fit-content;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
 }
 
 .search {
     width: 300px;
-    margin: 50px 0 0;
+    margin: 70px 0 0;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(255, 255, 255, 0.5);
     outline: none;
     transition: all 0.2s ease;
     border: 1px solid #ee7979;

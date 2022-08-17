@@ -53,8 +53,6 @@ const LandingPage = () => {
                             <img className={styles.empty} src={empty} alt="empty" />
                         </div>
                 }
-                <div className={styles.firstBall}></div>
-                <div className={styles.secondBall}></div>
             </div>
         </div>
     );
